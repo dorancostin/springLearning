@@ -22,6 +22,15 @@ http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
                         method="singBeforeQuest"/>
             <aop:after pointcut-ref="embark"
                        method="singAfterQuest"/>
+
         </aop:aspect>
     </aop:config>
+
+    <bean id="login" class="com.springaction.login.LoginAction">
+        <constructor-arg ref="authentificator" />
+    </bean>
+    <bean id="authentificator" class="com.springaction.login.Authentificator">
+        <property name="username" value="user1"/>
+        <property name="password" value="pass1"/>
+    </bean>
 </beans>
