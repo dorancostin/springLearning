@@ -14,6 +14,5 @@ public class App
         System.out.println("linia 3");
         System.out.println( "Hello 123" );
         System.out.println( "Hello 233" );
-        System.out.println( "Hello 233123221" );
     }
 }
