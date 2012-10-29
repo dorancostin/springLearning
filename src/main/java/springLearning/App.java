@@ -10,5 +10,6 @@ public class App
     {
         System.out.println( "Hello World -b!" );
         System.out.println("inca o linie");
+        System.out.println("linia 3");
     }
 }
